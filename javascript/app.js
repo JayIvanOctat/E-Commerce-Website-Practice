@@ -64,6 +64,10 @@ function initApp() {
             <button onclick="addToCard(${key})">Order</button>`;
         list.appendChild(newDiv);
     })
+    // Add CSS rule to change title font color to white
+    let style = document.createElement('style');
+    style.textContent = '.title { color: white; } .price { color: white; }';
+    document.head.appendChild(style);
 }
 
 initApp();
